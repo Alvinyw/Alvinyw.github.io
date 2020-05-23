@@ -17,14 +17,14 @@
 <meta property="og:site_name" content="Alvin&#39;s Blog">
 <meta property="og:description" content="CSS 中的视口单位(vh)听起来很棒。 如果要设置元素的样式以占据整个屏幕的高度，则可以设置 height: 100vh，就可以拥有一个完美的全屏元素，该元素会随着视口的变化而调整大小！但是 100vh 在移动浏览器中以微妙但基本的方式被破坏，这使其几乎无用。 最好避免 100vh，而是依靠 javascript 设置高度以获得完整的视口体验，或者在特殊情况下可以使用 100%。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://alvinyw.github.io/100vh_problem.png">
+<meta property="og:image" content="https://alvinyw.github.io/2020/04/1/100vh_problem.png">
 <meta property="article:published_time" content="2020-04-16T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-05-23T07:19:00.361Z">
+<meta property="article:modified_time" content="2020-05-23T07:24:00.122Z">
 <meta property="article:author" content="Alvin">
 <meta property="article:tag" content="Mobile Terminal">
 <meta property="article:tag" content="vh">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://alvinyw.github.io/100vh_problem.png">
+<meta name="twitter:image" content="https://alvinyw.github.io/2020/04/1/100vh_problem.png">
   
     <link rel="alternative" href="/atom.xml" title="Alvin&#39;s Blog" type="application/atom+xml">
   
@@ -253,7 +253,7 @@
 
 <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在手机端设置 height:100vh 时，在 Chrome 等 PC 浏览器上模拟是正常的；实际移动设备真机浏览的时候 100vh 的高度会超过窗口的实际高度，并显示滚动条。</p>
 <p>原因在于<strong>移动浏览器上（我测试的是 Chrome 和 Safari）具有地址栏</strong>，其中地址栏有时可见，有时隐藏，从而改变了视口的可见大小。 这些浏览器没有将 100vh 高度调整为视口高度变化时屏幕的可见部分，而是将 100vh 设置为浏览器的高度，并隐藏了地址栏。 结果是，当地址栏可见时，页面的可视化区域不止一屏。</p>
-<p>如下所示：<br><img src="../../../100vh_problem.png" alt="Alvin"></p>
+<p>如下所示：<br><img src="100vh_problem.png" alt="Alvin"></p>
 <h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><ol>
 <li>在简单情况下可使用 100% 设置可视化预期高度；但 height:100% 在复杂场景下会有意外；</li>
 <li>加全局样式：<br>[css]<br>html, body {<br>height:-webkit-fill-available;<br>}<br>[/css]</li>
@@ -581,35 +581,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JSON.parse</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">false</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">true</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">eval</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Website/SEO</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">https</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -625,6 +597,18 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">https</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">禁止</a>
               </li>
              
@@ -634,6 +618,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">源码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Mobile Terminal</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vh</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -649,11 +641,39 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Mobile Terminal</a>
+                <a href="javascript:void(0)" class="js-tag color1">JSON.parse</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">vh</a>
+                <a href="javascript:void(0)" class="js-tag color1">false</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">true</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">eval</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HTML5/CSS3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">下载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">文件下载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Download</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -706,26 +726,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HTML5/CSS3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">下载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文件下载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Download</a>
               </li>
             
             <div class="clearfix"></div>

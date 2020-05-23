@@ -6,21 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://alvinyw.github.io">
-  <title>Alvin&#39;s Blog</title>
+  <title>如何发布自己的 npm 包 | Alvin&#39;s Blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Alvin&#39;s Blog">
-<meta property="og:url" content="https://alvinyw.github.io/index.html">
+  <meta name="description" content="目录 什么是 npm？ 如何发布一个自己的 npm 包     什么是 npm？npm 是 javascript 著名的包管理工具，是前端模块化下的一个标志性产物，简单地地说，就是通过 npm 下载模块，复用已有的代码，提高工作效率；和移动端开发中，iOS 使用的 Cocoapods，Android 使用的 maven 有异曲同工之妙。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何发布自己的 npm 包">
+<meta property="og:url" content="https://alvinyw.github.io/2020/01/4/index.html">
 <meta property="og:site_name" content="Alvin&#39;s Blog">
+<meta property="og:description" content="目录 什么是 npm？ 如何发布一个自己的 npm 包     什么是 npm？npm 是 javascript 著名的包管理工具，是前端模块化下的一个标志性产物，简单地地说，就是通过 npm 下载模块，复用已有的代码，提高工作效率；和移动端开发中，iOS 使用的 Cocoapods，Android 使用的 maven 有异曲同工之妙。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://alvinyw.github.io/2020/01/4/npmjs_publish_adduser.png">
+<meta property="article:published_time" content="2020-01-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-23T06:23:50.551Z">
 <meta property="article:author" content="Alvin">
+<meta property="article:tag" content="Website&#x2F;SEO">
+<meta property="article:tag" content="npmjs">
+<meta property="article:tag" content="npm">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://alvinyw.github.io/2020/01/4/npmjs_publish_adduser.png">
   
     <link rel="alternative" href="/atom.xml" title="Alvin&#39;s Blog" type="application/atom+xml">
   
@@ -191,784 +196,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-2020/05/1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-2020/01/4" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/1/" target="_blank">利用 hexo 搭建自己的静态博客</a>
-  
+    <h1 class="article-title" itemprop="name">
+      如何发布自己的 npm 包
     </h1>
   
 
 
   
   
-<a href="/2020/05/1/" class="archive-article-date">
-        <time datetime="2020-05-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p> hexo是一款基于Node.js的静态博客框架,方便、快捷。并且有丰富的主题可供选择，是大多数开发者的首选。</p>
-    
-    <a class="article-more-a" href="/2020/05/1/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/05/1/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/hello-world/" target="_blank">Hello World</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/hello-world/" class="archive-article-date">
-        <time datetime="2020-05-21T08:14:35.280Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<h3 id="博客首页显示文章缩略"><a href="#博客首页显示文章缩略" class="headerlink" title="博客首页显示文章缩略"></a>博客首页显示文章缩略</h3><p>将下列占位符加在文章正文出即可：</p>
-<pre><code class="bash">&lt;!-- more --&gt;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/05/2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/2/" target="_blank">js 将字符串“true”、“false”转换成 true、false</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/2/" class="archive-article-date">
-        <time datetime="2020-05-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-07</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>日常工作中难免会碰到需将字符串 “true”、”false” 转换成 boolean 类型的 true、false 的情况；</p>
-<p>例如将 true、false 存储在 local storage 或者 session storage 中时，会被转换成字符串类型 “true”、”false”，此时通过 localStorage.getItem 取出来的值是 string 而不是 boolean，故不能直接用来做判断。</p>
-    
-    <a class="article-more-a" href="/2020/05/2/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JSON.parse</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">false</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">true</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">eval</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/05/2/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/04/2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/04/2/" target="_blank">通过 JS 将数字千位数格式化的几种方法</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/04/2/" class="archive-article-date">
-        <time datetime="2020-04-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>方法一的执行过程就是把数字转换成字符串后，打散为数组，再从末尾开始，逐个把数组中的元素插入到新数组（result）的开头。每插入一个元素，counter 就计一次数（加 1），当 counter 为 3 的倍数时，就插入一个逗号，但是要注意开头（i 为 0 时）不需要逗号。最后通过调用新数组的 join 方法得出结果。</p>
-<p>这个方法性能不是很好，不适合处理量大的数据，且<strong>不支持对正负数的格式化</strong>。</p>
-    
-    <a class="article-more-a" href="/2020/04/2/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">格式化</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">千分位</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/04/2/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/04/1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/04/1/" target="_blank">在移动端应避免使用100vh</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/04/1/" class="archive-article-date">
-        <time datetime="2020-04-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>CSS 中的视口单位(vh)听起来很棒。 如果要设置元素的样式以占据整个屏幕的高度，则可以设置 <code>height: 100vh</code>，就可以拥有一个完美的全屏元素，该元素会随着视口的变化而调整大小！但是 100vh 在移动浏览器中以微妙但基本的方式被破坏，这使其几乎无用。 最好避免 100vh，而是依靠 javascript 设置高度以获得完整的视口体验，或者在特殊情况下可以使用 100%。</p>
-    
-    <a class="article-more-a" href="/2020/04/1/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Mobile Terminal</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">vh</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/04/1/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/01/1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/01/1/" target="_blank">一篇文章彻底了解 HTTP 发展史</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/01/1/" class="archive-article-date">
-        <time datetime="2020-01-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-17</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <blockquote>
-<p>转自公众号：极客猴</p>
-</blockquote>
-<div class="catalog">
-
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
-<li><a href="#one">HTTP 0.9</a></li>
-<li><a href="#two">HTTP 1.0</a></li>
-<li><a href="#three">HTTP 1.1</a></li>
-<li><a href="#four">HTTP 2.0</a></li>
-<li><a href="#five">HTTP 3.0</a></div>
-
-</li>
-</ul>
-<p>HTTP 协议可以算是在人们日常生活、工作用得比较多的协议。我们使用浏览器访问网页，就是通过 HTTP 来传递数据；客户端跟服务器交互，大部分会使用到 HTTP 协议。对于我们做数据采集的人来说，也是再正常不过。Requests 和 Scrapy 都是对 HTTP 进行封装的支持自定义配置的库。</p>
-<p>互联网工程任务组（IETF）在去年提议将 HTTP-over-QUIC 重命名为 HTTP/3。我们是做技术的，需要保持一定敏感度。一旦 HTTP/3 标准被定下来，各大产商会相继支持，那会给我们带来什么影响？需要我们回顾下 HTTP 的发展史。</p>
-    
-    <a class="article-more-a" href="/2020/01/1/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">http</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">https</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/1/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/01/6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/01/6/" target="_blank">vue 组件间通信六种方式</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/01/6/" class="archive-article-date">
-        <time datetime="2020-01-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-17</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <blockquote>
-<p>转自：前端工匠公众号</p>
-</blockquote>
-<div class="catalog">
-
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
-<li><a href="#aa">前言</a></li>
-<li><a href="#one">一、props/$emit</a></li>
-<li><a href="#two">二、$emit/$on</a></li>
-<li><a href="#three">三、vuex</a></li>
-<li><a href="#four">四、$attrs/$listeners</a></li>
-<li><a href="#five">五、provide/inject</a></li>
-<li><a href="#six">六、$parent / $children与 ref</a></li>
-<li><a href="#bb">总结</a></div>
-
-</li>
-</ul>
-<p><name name="aa" id="aa"></name></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>组件是 vue.js最强大的功能之一，而组件实例的作用域是相互独立的，这就意味着不同组件之间的数据无法相互引用。一般来说，组件可以有以下几种关系：</p>
-    
-    <a class="article-more-a" href="/2020/01/6/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">listeners</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">vuex</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">props</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">emit</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">attrs</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">provide</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">inject</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ref</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">component</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bus</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">.on()</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">localstorage</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/6/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/01/4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/01/4/" target="_blank">如何发布自己的 npm 包</a>
-  
-    </h1>
-  
-
-
-  
-  
 <a href="/2020/01/4/" class="archive-article-date">
         <time datetime="2020-01-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-14</time>
 </a>
@@ -976,6 +222,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">933字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">3分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -992,217 +259,115 @@
 </ul>
 <p><a id="one" name="one"></a></p>
 <h2 id="什么是-npm？"><a href="#什么是-npm？" class="headerlink" title="什么是 npm？"></a>什么是 npm？</h2><p>npm 是 javascript 著名的包管理工具，是前端模块化下的一个标志性产物，简单地地说，就是通过 npm 下载模块，复用已有的代码，提高工作效率；和移动端开发中，iOS 使用的 Cocoapods，Android 使用的 maven 有异曲同工之妙。</p>
-    
-    <a class="article-more-a" href="/2020/01/4/#more">more >></a>
-    
-    
+<a id="more"></a>
 
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">npmjs</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/4/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/01/2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/01/2/" target="_blank">使用 jsDelivr 来优化网站访问速度</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/01/2/" class="archive-article-date">
-        <time datetime="2020-01-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="优化原理"><a href="#优化原理" class="headerlink" title="优化原理"></a>优化原理</h2><p>想要提升网站的访问速度，基本上切入点无非是优化前后端的访问性能。第一步肯定是 Profile，通过各种方法，看看速度的瓶颈在哪里。</p>
-<p>我的 Blog 架构比较简单，问题不出在后端，通过 Chrome 的 Developer Tools 的 Network 可以评测得出，还是出在网络访问性能上，前端加载的一些资源文件（JS、CSS 等）太耗时，加载时长要好几百 ms，部分甚至超过 1s。导致整体页面的载入性能（以 DOMContentLoaded 为准）较差。下图是 jquery.js 的加载耗时：</p>
-    
-    <a class="article-more-a" href="/2020/01/2/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">npmjs</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jsDelivr</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/2/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2020/01/5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/01/5/" target="_blank">JS禁止查看网页源代码的简单实现方法</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/01/5/" class="archive-article-date">
-        <time datetime="2020-01-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-06</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>在项目开发中有时会遇到不想让别人轻易查看到网站的源代码信息，我们有多种方法可以轻保护自己的网站源码。下面会介绍三种使用JavaScript来保护自己的网站源码的方法：</p>
-<p>最常见查看网站源码的无非有这四种：</p>
+<p><a id="two" name="two"></a></p>
+<h2 id="如何发布一个自己的-npm-包"><a href="#如何发布一个自己的-npm-包" class="headerlink" title="如何发布一个自己的 npm 包"></a>如何发布一个自己的 npm 包</h2><p><strong>1、创建一个 npm 的账号</strong><br>发布包之前你必须要注册一个 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npmjs</a> 的账号。</p>
+<p><strong>2、初始化一个简单的项目发布</strong></p>
 <ol>
-<li>F12</li>
-<li>鼠标右键单击</li>
-<li>Ctrl+Shift+I</li>
-<li>Ctrl+U</li>
+<li>本地创建一个文件夹：例如：alvinwp</li>
+<li>执行命令进入目录: $ cd alvinwp；或通过 vscode 等 IDE 打开该项目</li>
+<li>执行 npm init 初始化项目。默认一路回车就行</li>
+<li>在 alvinwp 文件夹中创建一个文件名为 index.js 的文件，简单的写了一下内容。<pre><code class="bash">!<span class="function"><span class="title">function</span></span>(){
+console.log(`alvinwp 引入的包入口`)
+}()</code></pre>
+或者直接将 js、css 等资源文件放在项目中。<br><code>package.json</code> 文件的部分字段说明：<pre><code class="bash">默认字段简介：
+name：发布的包名，默认是上级文件夹名。不得与现在 npm 中的包名重复。包名不能有大写字母/空格/下滑线!
+version：你这个包的版本，默认是 1.0.0。对于 npm 包的版本号有着一系列的规则，模块的版本号采用 X.Y.Z 的格式，具体体现为：
+1、修复 bug，小改动，增加z。
+2、增加新特性，可向后兼容，增加 y
+3、有很大的改动，无法向下兼容，增加 x
+description：项目简介
+mian：入口文件，默认是 index.js，可以修改成自己的文件 
+scripts：包含各种脚本执行命令
+<span class="built_in">test</span>：测试命令。
+author：写自己的账号名
+license：这个直接回车，开源文件协议吧，也可以是 MIT，看需要吧。</code></pre>
+<div class="note">
+<span class="red">注意：</span>author 必须和步骤一中创建的 npmjs 账号名相同；每次 publish 前要保证 version 有变化，不然会报错。
+</div>
+
+</li>
 </ol>
-    
-    <a class="article-more-a" href="/2020/01/5/#more">more >></a>
-    
+<p><strong>3、如果本机第一次发布包（非第一次可忽略）</strong><br>在终端输入 npm adduser，提示输入账号，密码和邮箱，然后将提示创建成功，具体如下图。<br>【注意】npm adduser 成功的时候默认你已经登陆了，所以可跳过第四步。</p>
+<p><img src="npmjs_publish_adduser.png" alt="Alvin"></p>
+<p>最后一行显示登录信息，as 后面是用户名。on 后是源地址，如果不是 <a href="https://registry.npmjs.org/，比如是淘宝源，请切换。可以参考：[https://segmentfault.com/a/1190000004444283](https://segmentfault.com/a/1190000004444283)" target="_blank" rel="noopener">https://registry.npmjs.org/，比如是淘宝源，请切换。可以参考：[https://segmentfault.com/a/1190000004444283](https://segmentfault.com/a/1190000004444283)</a></p>
+<p><strong>4、非第一次发布包</strong><br>在终端输入 npm login，然后输入你创建的账号和密码，和邮箱，登陆，结果同步骤三。</p>
+<p><strong>5、npm publish 发包</strong><br>成功发布：</p>
+<pre><code class="bash">PS D:\IISsites\alvinwp&gt; npm publish
++ alvinwp@1.0.1</code></pre>
+<p><strong>注意：</strong>如果项目里有部分私密的代码不想发布到 npm 上，可以将它写入 .gitignore 或.npmignore 中，上传就会被忽略了。</p>
+<p><strong>6、查询发布的包</strong><br>到 npm 官网全局搜索即可</p>
+<p><strong>7、安装使用方式</strong><br>和其他包使用方式一致，具体使用可以看源码介绍或者 README.md。</p>
+<p><strong>8、如何撤销发布的包</strong><br>终端执行 <code>npm unpublish</code><br>例如：</p>
+<blockquote>
+<p>1、npm unpublish <a href="mailto:alvinwp@1.0.0">alvinwp@1.0.0</a> 删除某个版本</p>
+<p>2、npm unpublish alvinwp –force 删除整个 npm 市场的包</p>
+</blockquote>
+<p>不过撤包推荐用法：<br>npm unpublish 的推荐替代命令：<code>npm deprecate &lt;pkg&gt;[@&lt;version&gt;] &lt;message&gt;</code><br>使用这个命令，并不会在社区里撤销你已有的包，但会在任何人尝试安装这个包的时候得到警告</p>
+<blockquote>
+<p>例如：npm deprecate alvinwp ‘这个包我已经不再维护了哟～’</p>
+</blockquote>
+<p><strong>注意：</strong>如果报权限方面的错，加上 –force</p>
+<div class="thk hidden">
+https://www.jianshu.com/p/7bba18925fbf
+</div>
     
 
     
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
 
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Alvin
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://alvinyw.github.io/2020/01/4/" title="如何发布自己的 npm 包" target="_blank">https://alvinyw.github.io/2020/01/4/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/Alvinyw/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
     
 
   </div>
@@ -1214,19 +379,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">禁止</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">npmjs</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">查看</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">源码</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
         		</li>
       		
 		</ul>
@@ -1235,16 +396,85 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/5/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://alvinyw.github.io/2020/01/4/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/01/6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vue 组件间通信六种方式
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用 jsDelivr 来优化网站访问速度</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -1265,12 +495,14 @@
 
 
 
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next »</a>
-    </nav>
-  
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -1310,8 +542,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

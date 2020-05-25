@@ -18,7 +18,7 @@
 <meta property="og:description" content="2020-01 在 玖富数科 深圳研发团队的分享    分享的内容模块 一、什么是前端开发 二、网页的组成元素与作用 三、Chrome 开发者工具的使用 四、浏览器的数据储存和资源缓存 五、前端开发的乐趣">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-11-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-05-25T06:19:00.493Z">
+<meta property="article:modified_time" content="2020-05-25T06:23:48.707Z">
 <meta property="article:author" content="Alvin">
 <meta property="article:tag" content="Website&#x2F;SEO">
 <meta property="article:tag" content="Common Sense">
@@ -347,21 +347,26 @@
 
 <p>其中 name 属性共有以下几种参数。(A-C 为常用属性)</p>
 <ul>
-<li><p>A. keywords(关键字)<br>说明：用于告诉搜索引擎，你网页的关键字。举例：</p>
+<li>A. keywords(关键字)<br>说明：用于告诉搜索引擎，你网页的关键字。举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span></span><br><span class="hljs-tag">    <span class="hljs-attr">content</span>=<span class="hljs-string">"玖富, 超级大脑, 开放平台, 超级数字钱包, 数字科技, 金融赋能, 金融服务, 金融产品设计, 大数据风控, 信用评分, 人工智能, 数字证书, 数字营销, 支付体系, 账户体系"</span>&gt;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>B. description(网站内容的描述)<br>说明：用于告诉搜索引擎，你网站的主要内容。举例：</p>
+
+<ul>
+<li>B. description(网站内容的描述)<br>说明：用于告诉搜索引擎，你网站的主要内容。举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span></span><br><span class="hljs-tag">    <span class="hljs-attr">content</span>=<span class="hljs-string">"玖富超级大脑将向场景合作伙伴全面提供智能化、模块化、即插即用型的高性能数字科技解决方案，赋予全场景B端3A级（Account、AI、API）底层金融服务能力"</span>&gt;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>C. viewport (移动端的窗口)<br>这个属性常用于设计移动端网页。在用 Bootstrap, AmazeUI 等框架时候都有用过 Viewport。举例：</p>
+
+<ul>
+<li>C. viewport (移动端的窗口)<br>这个属性常用于设计移动端网页。在用 Bootstrap, AmazeUI 等框架时候都有用过 Viewport。举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>D. robots(定义搜索引擎爬虫的索引方式)<br>说明：robots 用来告诉爬虫哪些页面需要索引，哪些页面不需要索引。content 的参数有 all, none, index, noindex, follow, nofollow。默认是 all。举例：</p>
+
+<ul>
+<li>D. robots(定义搜索引擎爬虫的索引方式)<br>说明：robots 用来告诉爬虫哪些页面需要索引，哪些页面不需要索引。content 的参数有 all, none, index, noindex, follow, nofollow。默认是 all。举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"robots"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"none"</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <p>具体参数如下：</p>
-</li>
-</ul>
 <ol>
 <li>none : 搜索引擎将忽略此网页，等价于 noindex，nofollow。</li>
 <li>noindex : 搜索引擎不索引此网页。</li>
@@ -371,13 +376,16 @@
 <li>follow : 搜索引擎继续通过此网页的链接索引搜索其它的网页。</li>
 </ol>
 <ul>
-<li><p>E. author (作者)<br>说明：用于标注网页作者举例：</p>
+<li>E. author (作者)<br>说明：用于标注网页作者举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"author"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Lxxyx,841380530@qq.com"</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <p>F. generator(网页制作软件)<br>说明：用于标明网页是什么软件做的举例:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"generator"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Sublime Text3"</span>&gt;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>G. copyright(版权)<br>说明：用于标注版权信息举例：</p>
+
+<ul>
+<li>G. copyright(版权)<br>说明：用于标注版权信息举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"copyright"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Alvin xxxxxx"</span>&gt;</span> //代表该网站为 Alvin 个人版权所有。<br></code></pre></td></tr></table></figure>
 
 <p>H. revisit-after(搜索引擎爬虫重访时间)<br>说明：如果页面不是经常更新，为了减轻搜索引擎爬虫对服务器带来的压力，可以设置一个爬虫的重访时间。如果重访时间过短，爬虫将按它们定义的默认时间来访问。举例：</p>
@@ -393,8 +401,6 @@
 </div>
 <div id="clickShowGroup">
 
-</li>
-</ul>
 <p>2&gt; http-equiv 属性<span class="icon"></span></p>
 <div class="content">http-equiv 顾名思义，相当于 http 的文件头作用，可以定义 HTTP 参数。meta 标签中 http-equiv 属性语法格式是：
 
@@ -402,46 +408,48 @@
 
 <p>其中 http-equiv 属性主要有以下几种参数：</p>
 <ul>
-<li><p>A. content-Type (设定网页字符集)(推荐使用 HTML5 的方式)<br>说明：用于设定网页字符集，便于浏览器解析与渲染页面举例：</p>
+<li>A. content-Type (设定网页字符集)(推荐使用 HTML5 的方式)<br>说明：用于设定网页字符集，便于浏览器解析与渲染页面举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"content-Type"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"text/html;charset=utf-8"</span>&gt;</span> //旧的 HTML，不推荐<br><br><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span> //HTML5 设定网页字符集的方式，推荐使用 UTF-8<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>B. X-UA-Compatible (浏览器采取何种版本渲染当前页面)<br>说明：用于告知浏览器以何种版本来渲染页面。（一般都设置为最新模式，在各大框架中这个设置也很常见。）举例：</p>
+
+<ul>
+<li>B. X-UA-Compatible (浏览器采取何种版本渲染当前页面)<br>说明：用于告知浏览器以何种版本来渲染页面。（一般都设置为最新模式，在各大框架中这个设置也很常见。）举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge,chrome=1"</span> /&gt;</span> //指定 IE 和 Chrome 使用最新版本渲染当前页面<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>C. cache-control (指定请求和响应遵循的缓存机制)<br>用法1.<br>说明：指导浏览器如何缓存某个响应以及缓存多长时间。举例:</p>
+
+<ul>
+<li>C. cache-control (指定请求和响应遵循的缓存机制)<br>用法1.<br>说明：指导浏览器如何缓存某个响应以及缓存多长时间。举例:</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"cache-control"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"no-cache"</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <p>共有以下几种用法：</p>
-</li>
-</ul>
 <ol>
-<li><p>no-cache: 先发送请求，与服务器确认该资源是否被更改，如果未被更改，则使用缓存。</p>
-</li>
-<li><p>no-store: 不允许缓存，每次都要去服务器上，下载完整的响应。（安全措施）</p>
-</li>
-<li><p>public : 缓存所有响应，但并非必须。因为 max-age 也可以做到相同效果</p>
-</li>
-<li><p>private : 只为单个用户缓存，因此不允许任何中继进行缓存。（比如说 CDN 就不允许缓存 private 的响应）</p>
-</li>
-<li><p>maxage : 表示当前请求开始，该响应在多久内能被缓存和重用，而不去服务器重新请求。例如：max-age=60 表示响应可以再缓存和重用 60 秒。<br>用法2.(禁止百度自动转码)<br>说明：用于禁止当前页面在移动端浏览时，被百度自动转码。虽然百度的本意是好的，但是转码效果很多时候却不尽人意。所以可以在 head 中加入例子中的那句话，就可以避免百度自动转码了。举例：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Cache-Control"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"no-siteapp"</span> /&gt;</span><br></code></pre></td></tr></table></figure>
-</li>
+<li>no-cache: 先发送请求，与服务器确认该资源是否被更改，如果未被更改，则使用缓存。</li>
+<li>no-store: 不允许缓存，每次都要去服务器上，下载完整的响应。（安全措施）</li>
+<li>public : 缓存所有响应，但并非必须。因为 max-age 也可以做到相同效果</li>
+<li>private : 只为单个用户缓存，因此不允许任何中继进行缓存。（比如说 CDN 就不允许缓存 private 的响应）</li>
+<li>maxage : 表示当前请求开始，该响应在多久内能被缓存和重用，而不去服务器重新请求。例如：max-age=60 表示响应可以再缓存和重用 60 秒。<br>用法2.(禁止百度自动转码)<br>说明：用于禁止当前页面在移动端浏览时，被百度自动转码。虽然百度的本意是好的，但是转码效果很多时候却不尽人意。所以可以在 head 中加入例子中的那句话，就可以避免百度自动转码了。举例：</li>
 </ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Cache-Control"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"no-siteapp"</span> /&gt;</span><br></code></pre></td></tr></table></figure>
+
 <ul>
-<li><p>D. expires(网页到期时间)<br>说明:用于设定网页的到期时间，过期后网页必须到服务器上重新传输。举例：</p>
+<li>D. expires(网页到期时间)<br>说明:用于设定网页的到期时间，过期后网页必须到服务器上重新传输。举例：</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"expires"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Sunday 26 October 2016 01:00 GMT"</span> /&gt;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>E. refresh (自动刷新并指向某页面)<br>说明：网页将在设定的时间内，自动刷新并调向设定的网址。举例:</p>
+
+<ul>
+<li>E. refresh (自动刷新并指向某页面)<br>说明：网页将在设定的时间内，自动刷新并调向设定的网址。举例:</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"refresh"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"2；URL=http://www.lxxyx.win/"</span>&gt;</span> //意思是 2 秒后跳转向我的博客<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>F. Set-Cookie(cookie设定)<br>说明：如果网页过期。那么这个网页存在本地的 cookies 也会被自动删除。</p>
+
+<ul>
+<li>F. Set-Cookie(cookie设定)<br>说明：如果网页过期。那么这个网页存在本地的 cookies 也会被自动删除。</li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Set-Cookie"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"name,date"</span>&gt;</span> //格式<br><br><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Set-Cookie"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"User=Lxxyx; path=/; expires=Sunday, 10-Jan-16 10:00:00 GMT"</span>&gt;</span><br>//具体范例<br></code></pre></td></tr></table></figure>
 </div>
 </div>
 <a id="three" name="three"></a>
 
-</li>
-</ul>
 <h2 id="三、Chrome-开发者工具的使用"><a href="#三、Chrome-开发者工具的使用" class="headerlink" title="三、Chrome 开发者工具的使用"></a>三、Chrome 开发者工具的使用</h2><p><strong>1.Elements（元素选项卡）</strong></p>
 <ul>
 <li><p>当前选中：当鼠标移动到任何一个元素上，对应的 html 视图中会给该元素蓝色的背景；</p>

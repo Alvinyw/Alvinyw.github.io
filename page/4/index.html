@@ -205,110 +205,6 @@
             
 
   
-    <article id="post-2018/05/1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2018/05/1/">作用域与上下文的理解</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2018/05/1/" class="archive-article-date">
-        <time datetime="2018-05-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-10</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>作用域和上下文的概念和区别说实话我一开始也不是很清楚，直到后面参加公司产品的开发，开始写原生 JS 的时候发现很多一旦逻辑写的稍微复杂一些就会涉及到上下文和作用域，如果不理解的话很容易产生一些不必要的问题，于是我找了很多资料，系统的对比了一下这两个知识点，并做了这篇笔记。</p>
-<p>上下文（context）和作用域（scope）的关系可大致总结为：</p>
-<blockquote>
-<p>上下文是一段程序运行所需要的最小数据集合；作用域是当前上下文中，按照具体规则能够访问到的标识符（变量）的范围。</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2018/05/1/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">上下文</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">作用域</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">闭包</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2018/05/1/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-2018/05/8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -532,7 +428,7 @@
 
 
   
-    <article id="post-2018/05/2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2018/05/1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -540,7 +436,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2018/05/2/">Wordpress 使用技巧和常遇到的坑</a>
+	  <a class="article-title" href="/2018/05/1/">作用域与上下文的理解</a>
 	
     </h1>
   
@@ -548,8 +444,8 @@
 
   
   
-<a href="/2018/05/2/" class="archive-article-date">
-        <time datetime="2018-05-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-08</time>
+<a href="/2018/05/1/" class="archive-article-date">
+        <time datetime="2018-05-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-10</time>
 </a>
 
   
@@ -561,18 +457,13 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <div class="catalog">
-
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
-<li><a href="#one">一、WordPress 中如何控制首页和列表页内容(摘要)显示的字数</a></li>
-<li><a href="#two">…</a></div>
-
-</li>
-</ul>
-<p><a name="one" id="one"></a></p>
-<h2 id="一、WordPress-中如何控制首页和列表页内容-摘要-显示的字数"><a href="#一、WordPress-中如何控制首页和列表页内容-摘要-显示的字数" class="headerlink" title="一、WordPress 中如何控制首页和列表页内容(摘要)显示的字数"></a>一、WordPress 中如何控制首页和列表页内容(摘要)显示的字数</h2><p>有一次我把 wordpress 从 4.0 升级到最新的 4.92 版本时，发现首页显示文章的摘要数字变得很少了，而且后台没有修改入口；于是上网搜了一下，发现不止是升级的时候容易有这个问题，当把国外主题汉化成国内主题时也会有这个问题；试了网友列出的一些方法，将有效的列在下面：</p>
+    <p>作用域和上下文的概念和区别说实话我一开始也不是很清楚，直到后面参加公司产品的开发，开始写原生 JS 的时候发现很多一旦逻辑写的稍微复杂一些就会涉及到上下文和作用域，如果不理解的话很容易产生一些不必要的问题，于是我找了很多资料，系统的对比了一下这两个知识点，并做了这篇笔记。</p>
+<p>上下文（context）和作用域（scope）的关系可大致总结为：</p>
+<blockquote>
+<p>上下文是一段程序运行所需要的最小数据集合；作用域是当前上下文中，按照具体规则能够访问到的标识符（变量）的范围。</p>
+</blockquote>
     
-    <a class="article-more-a" href="/2018/05/2/#more">more >></a>
+    <a class="article-more-a" href="/2018/05/1/#more">more >></a>
     
     
 
@@ -593,7 +484,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordpress</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">上下文</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">作用域</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">闭包</a>
         		</li>
       		
 		</ul>
@@ -603,7 +502,7 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2018/05/2/">展开全文 >></a>
+      <a class="article-more-a" href="/2018/05/1/">展开全文 >></a>
     </p>
     
 
@@ -726,6 +625,107 @@
 
 
   
+    <article id="post-2018/05/2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2018/05/2/">Wordpress 使用技巧和常遇到的坑</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/2018/05/2/" class="archive-article-date">
+        <time datetime="2018-05-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-08</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <div class="catalog">
+
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
+<li><a href="#one">一、WordPress 中如何控制首页和列表页内容(摘要)显示的字数</a></li>
+<li><a href="#two">…</a></div>
+
+</li>
+</ul>
+<p><a name="one" id="one"></a></p>
+<h2 id="一、WordPress-中如何控制首页和列表页内容-摘要-显示的字数"><a href="#一、WordPress-中如何控制首页和列表页内容-摘要-显示的字数" class="headerlink" title="一、WordPress 中如何控制首页和列表页内容(摘要)显示的字数"></a>一、WordPress 中如何控制首页和列表页内容(摘要)显示的字数</h2><p>有一次我把 wordpress 从 4.0 升级到最新的 4.92 版本时，发现首页显示文章的摘要数字变得很少了，而且后台没有修改入口；于是上网搜了一下，发现不止是升级的时候容易有这个问题，当把国外主题汉化成国内主题时也会有这个问题；试了网友列出的一些方法，将有效的列在下面：</p>
+    
+    <a class="article-more-a" href="/2018/05/2/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordpress</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2018/05/2/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2018/05/3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -782,6 +782,91 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2018/05/3/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2018/05/11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2018/05/11/">VUE 笔记一</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/2018/05/11/" class="archive-article-date">
+        <time datetime="2018-05-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-07</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2018/05/11/">展开全文 >></a>
     </p>
     
 
@@ -885,91 +970,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2018/05/7/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2018/05/11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2018/05/11/">VUE 笔记一</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2018/05/11/" class="archive-article-date">
-        <time datetime="2018-05-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-07</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Website/SEO</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2018/05/11/">展开全文 >></a>
     </p>
     
 
@@ -1342,34 +1342,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Website/SEO</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ID</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">个数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">重复</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">picturePreview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">预览</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Common Sense</a>
               </li>
              
@@ -1386,19 +1358,39 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Website/SEO</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">picturePreview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">预览</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ID</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">个数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">重复</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">gitbook</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">TortoiseGit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1414,6 +1406,10 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">TortoiseGit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">上下文</a>
               </li>
              
@@ -1426,11 +1422,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">cookie</a>
+                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">prototype</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">cookie</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1443,54 +1443,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">load</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">axios</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">反向代理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">正向代理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hover</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">全选</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">navigationStart</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">performance</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">timing</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">加载时间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">白屏</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">首屏</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1526,15 +1478,27 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">懒加载</a>
+                <a href="javascript:void(0)" class="js-tag color1">axios</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">服务端渲染</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">客户端渲染</a>
+                <a href="javascript:void(0)" class="js-tag color5">反向代理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">正向代理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hover</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">全选</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1558,6 +1522,22 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">懒加载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">服务端渲染</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">客户端渲染</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">跨域，同源策略，chrome</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">XSS</a>
               </li>
              
@@ -1566,7 +1546,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">跨域，同源策略，chrome</a>
+                <a href="javascript:void(0)" class="js-tag color5">CSRF</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">https</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1579,18 +1567,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">jsDelivr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">https</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">CSRF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1611,6 +1587,42 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">千分位</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Mobile Terminal</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vh</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JSON.parse</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">false</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">true</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">eval</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">多态</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">封装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">继承</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1638,27 +1650,27 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JSON.parse</a>
+                <a href="javascript:void(0)" class="js-tag color1">navigationStart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">false</a>
+                <a href="javascript:void(0)" class="js-tag color2">performance</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">true</a>
+                <a href="javascript:void(0)" class="js-tag color2">timing</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">eval</a>
+                <a href="javascript:void(0)" class="js-tag color5">加载时间</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Mobile Terminal</a>
+                <a href="javascript:void(0)" class="js-tag color3">白屏</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">vh</a>
+                <a href="javascript:void(0)" class="js-tag color3">首屏</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1679,18 +1691,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Default</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">内存</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">垃圾回收</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">泄露</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1742,15 +1742,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">多态</a>
+                <a href="javascript:void(0)" class="js-tag color3">内存</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">封装</a>
+                <a href="javascript:void(0)" class="js-tag color5">垃圾回收</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">继承</a>
+                <a href="javascript:void(0)" class="js-tag color3">泄露</a>
               </li>
             
             <div class="clearfix"></div>
